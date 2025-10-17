@@ -1,0 +1,74 @@
+*Task 1: AI-Powered Code Completion Tool*
+
+Python function to sort a list of dictionaries by a specific key:
+
+*Manual Implementation*
+def sort_dict_list(dict_list, key):
+    return sorted(dict_list, key=lambda x: x[key])
+*AI-Suggested Code (GitHub Copilot)*
+def sort_dict_list(dict_list, key):
+    return sorted(dict_list, key=lambda x: x.get(key))
+The AI-suggested code uses the `get()` method to handle cases where the key is missing in a dictionary. This makes the code more robust.
+
+*Efficiency Comparison*
+Both implementations have a time complexity of O(n log n) due to the `sorted()` function. However, the AI-suggested code might be slightly slower due to the additional overhead of the `get()` method.
+
+*Task 2: Automated Testing with AI Framework*
+
+Test script using Selenium IDE with AI plugins:
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+Set up driver
+driver = webdriver.Chrome()
+
+Navigate to login page
+driver.get("https://example.com/login")
+
+Test valid credentials
+driver.find_element(By.NAME, "username").send_keys("username")
+driver.find_element(By.NAME, "password").send_keys("password")
+driver.find_element(By.NAME, "login").click()
+
+Test invalid credentials
+driver.find_element(By.NAME, "username").send_keys("invalid")
+driver.find_element(By.NAME, "password").send_keys("invalid")
+driver.find_element(By.NAME, "login").click()
+
+Capture results
+print(driver.title)
+
+Close driver
+driver.quit()
+*AI-Generated Test Script Benefits*
+
+- Faster test creation
+- Improved test coverage
+- Reduced maintenance effort
+
+*Task 3: Predictive Analytics for Resource Allocation*
+
+Jupyter Notebook using the Kaggle Breast Cancer Dataset:
+import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, f1_score
+
+Load dataset
+df = pd.read_csv("breast_cancer.csv")
+
+Preprocess data
+X = df.drop(["target"], axis=1)
+y = df["target"]
+
+Split data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+Train model
+model = RandomForestClassifier(n_estimators=100)
+model.fit(X_train, y_train)
+
+Evaluate model
+y_pred = model.predict(X_test)
+print("Accuracy:", accuracy_score(y_test, y_pred))
+print("F1-score:", f1_score(y_test, y_pred))
