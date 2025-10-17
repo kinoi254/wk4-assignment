@@ -1,0 +1,25 @@
+*Potential Biases in the Dataset*
+
+The predictive model from Task 3, trained on the Kaggle Breast Cancer Dataset, may contain biases due to:
+
+1. *Underrepresented groups*: The dataset might not adequately represent diverse patient populations, such as:
+    - Age: Older or younger patients might be underrepresented.
+    - Ethnicity: Certain ethnic groups might be underrepresented, leading to biased predictions.
+    - Geographic location: Patients from specific regions or countries might be underrepresented.
+2. *Data collection bias*: The data collection process might introduce biases, such as:
+    - Selection bias: Patients who underwent specific treatments or were diagnosed at certain stages might be overrepresented.
+    - Measurement bias: Differences in data collection methods or instruments might affect the quality of the data.
+
+*Addressing Biases with Fairness Tools like IBM AI Fairness 360*
+
+IBM AI Fairness 360 is an open-source toolkit that provides a comprehensive set of metrics and algorithms to detect and mitigate bias in AI models. To address potential biases in the predictive model:
+
+1. *Bias detection*: Use AI Fairness 360's metrics, such as:
+    - Disparate Impact (DI): Measures the ratio of favorable outcomes between groups.
+    - Statistical Parity Difference (SPD): Measures the difference in favorable outcomes between groups.
+2. *Bias mitigation*: Apply algorithms, such as:
+    - Reweighing: Assigns different weights to samples in the training data to balance the groups.
+    - Reject Option Classification (ROC): Withholds predictions for samples that are likely to be biased.
+3. *Model evaluation*: Continuously monitor the model's performance and fairness metrics to ensure that biases are not introduced over time.
+
+By using fairness tools like IBM AI Fairness 360, the company can proactively identify and address potential biases in the predictive model, ensuring more equitable and fair outcomes for all patients.
