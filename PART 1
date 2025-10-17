@@ -1,0 +1,32 @@
+PART 1
+
+Q1: AI-driven code generation tools*
+
+AI-driven code generation tools like GitHub Copilot reduce development time by:
+
+1. *Automating repetitive coding tasks*: Generating boilerplate code, reducing manual effort.
+2. *Providing code suggestions*: Offering intelligent code completions and snippets.
+3. *Assisting in code writing*: Helping developers write code faster and more efficiently.
+
+Limitations:
+
+1. *Limited context understanding*: AI may not fully understand project-specific requirements.
+2. *Code quality and security*: Generated code may require review for security vulnerabilities and quality standards.
+3. *Dependence on training data*: AI models may struggle with novel or complex tasks outside their training data.
+
+*Q2: Supervised vs. Unsupervised Learning in Automated Bug Detection*
+ Supervised Learning Unsupervised Learning
+Training Data Labeled dataset of buggy and clean code Unlabeled dataset
+Detection Approach Learns patterns from labeled data to identify bugs Identifies anomalies and outliers in code
+Effectiveness Effective for detecting known bug patterns Can detect unknown or complex bugs
+False Positives Typically lower false positive rates May have higher false positive rates.
+
+*Q3: Bias Mitigation in AI-driven User Experience Personalization*
+
+Bias mitigation is critical when using AI for user experience personalization because:
+
+1. *Prevents discriminatory outcomes*: Ensures AI-driven decisions don't unfairly disadvantage certain user groups.
+2. *Maintains user trust*: Provides a fair and transparent user experience.
+3. *Avoids reinforcing stereotypes*: Prevents AI models from perpetuating existing biases and stereotypes.
+
+By prioritizing bias mitigation, developers can create more inclusive and equitable AI-driven user experiences.
